@@ -1,0 +1,39 @@
+{
+  "name": "adapt-export-import",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "description": "Tools to export and import from the Adapt authoring tool database.",
+  "keywords": [
+    "adapt",
+    "authoring"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ff/ff-adapt-tools.git"
+  },
+  "contributors": [
+    "Anthony Wilkinson <anthonyw@freeformers.com>"
+  ],
+  "dependencies": {
+    "@core-es/math-extensions": "^1.0.0",
+    "async": "2.5.0",
+    "aws-sdk": "^2.338.0",
+    "chalk": "^2.4.2",
+    "flatmap": "0.0.3",
+    "locutus": "^2.0.10",
+    "lodash": "^4.17.11",
+    "mime-types": "^2.1.21",
+    "node-stream-zip": "^1.7.0",
+    "opn": "^5.4.0",
+    "reachable-urls": "^1.0.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "tough-cookie": "^2.3.4",
+    "underscore": "~1.5.2",
+    "unzip-stream": "^0.3.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "mongodb": "^3.0.0"
+  }
+}

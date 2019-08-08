@@ -1,0 +1,24 @@
+<div class="sling-extension-inner">
+
+	<button aria-label="{{_globals._extensions._sling.openButtonText}}" class="base sling-extension-button icon icon-question"></button>
+
+	<div class="sling-extension-widget" role="region" aria-label="{{_globals._accessibility._ariaLabels.feedbackPopUp}}">
+		{{#each _sling}}
+		<div class="sling-extension-item item-{{@index}}">
+			<div class="sling-extension-item-inner">
+				<div class="sling-extension-item-title">
+					<div class="sling-extension-item-title-inner accessible-text-block" role="heading" aria-level="1" tabindex="0">
+						{{{title}}}
+					</div>
+				</div>
+				<div class="sling-extension-item-body">
+					<div class="sling-extension-item-body-inner">
+						Participants are currently viewing this sling whilst this popup is visible.
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+
+</div>

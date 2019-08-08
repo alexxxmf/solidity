@@ -1,0 +1,15 @@
+{
+    "name": "adapt-sling",
+    "framework": "^2.0.0",
+    "version": "2.0.3",
+    "displayName": "Sling",
+    "extension": "sling",
+    "description": "An extension that the ability to sling URLs at participants on the Freeformers platform",
+    "main": "/js/adapt-sling.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+	"targetAttribute": "_sling",
+    "license": "UNLICENSED"
+}

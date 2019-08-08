@@ -1,0 +1,126 @@
+{
+    "title": "Freeformers Core Modules",
+    "bucket": "ff-content-delivery",
+    "directory": "advocate/core/sessions",
+    "generate_full": true,
+    "generate_version": "1.01",
+    "distribution": "E1I0WUQ4GOKXBY",
+    "url": "https://content.freeformers.com",
+    "theme": "ff-advocate-adapt-theme",
+    "roots": [
+      {
+        "prefix": "A1",
+        "course": "01",
+        "title": "Always learning",
+        "description": "Being open-minded in a digital world",
+        "session_name": "Session 1",
+        "path": "always-learning"
+      },
+      {
+        "prefix": "B2",
+        "course": "02",
+        "title": "Safe passwords",
+        "description": "Improving password safety",
+        "session_name": "Session 2",
+        "path": "passwords"
+      },
+      {
+        "prefix": "C3",
+        "course": "03",
+        "title": "Solution finding",
+        "description": "Effective mindsets for finding solutions",
+        "session_name": "Session 3",
+        "path": "finding-the-answer-1"
+      },
+      {
+        "prefix": "D4",
+        "course": "04",
+        "title": "Digital tools",
+        "description": "Digital tools to make life easier",
+        "session_name": "Session 4",
+        "path": "tooling"
+      },
+      {
+        "prefix": "E5",
+        "course": "05",
+        "title": "Resilience",
+        "description": "Thriving in a digital world",
+        "session_name": "Session 5",
+        "path": "adaptability"
+      },
+      {
+        "prefix": "F6",
+        "course": "06",
+        "title": "Verbal communication",
+        "description": "Verbal communication skills online",
+        "session_name": "Session 6",
+        "path": "online-communication-1"
+      },
+      {
+        "prefix": "G7",
+        "course": "07",
+        "title": "Solution finding #2",
+        "description": "Techniques to help find the answer",
+        "session_name": "Session 7",
+        "path": "finding-the-answer-2"
+      },
+      {
+        "prefix": "H8",
+        "course": "08",
+        "title": "Spotting a scam",
+        "description": "Understanding and spotting scams",
+        "session_name": "Session 8",
+        "path": "phishing"
+      },
+      {
+        "prefix": "I9",
+        "course": "09",
+        "title": "Communicating well",
+        "description": "Techniques to improve online communication",
+        "session_name": "Session 9",
+        "path": "online-communication-2"
+      },
+      {
+        "prefix": "J10",
+        "course": "10",
+        "title": "Protecting my data",
+        "description": "How to deal with personal data safely",
+        "session_name": "Session 10",
+        "path": "data"
+      },
+      {
+        "prefix": "K11",
+        "course": "11",
+        "title": "Sharing and storing files",
+        "description": "Online sharing and storing",
+        "session_name": "Session 11",
+        "path": "sharing-files"
+      },
+      {
+        "prefix": "L12",
+        "course": "12",
+        "title": "Social media",
+        "description": "Communicating using Social Media",
+        "session_name": "Session 12",
+        "path": "social-media"
+      },
+      {
+        "prefix": "M13",
+        "course": "13",
+        "title": "Sharing your calendar",
+        "description": "Using tech to schedule my time",
+        "session_name": "Session 13",
+        "path": "sharing-calendar"
+      }
+    ],
+    "groups": [
+        {   
+            "title": "Group 1",
+            "sessionIds": ["A1", "B2", "C3", "D4", "E5", "F6"]
+        },
+        {
+            "title": "Group 2",
+            "sessionIds": ["G7", "H8", "I9", "J10", "K11", "L12", "M13"]
+        }
+    ]
+  }

@@ -1,0 +1,54 @@
+{
+  "bucket": "ff-content-delivery",
+  "directory": "advocate/customer/sessions",
+  "distribution": "E1I0WUQ4GOKXBY",
+  "theme": "ff-advocate-adapt-theme",
+  "title": "Freeformers Customer Obsession Modules",
+  "name" : "Customer Focus Demo",
+  "generate_full": true,
+  "generate_version": "1.01",
+  "language": "en",
+  "url": "https://content.freeformers.com",
+  "roots": [
+    {
+      "prefix": "A1",
+      "course": "01",
+      "title": "Always Learning",
+      "description": "Being open-minded in a digital world",
+      "session_name": "Session 1",
+      "path": "always-learning"
+    },
+    {
+      "prefix": "Empathy",
+      "course": "16",
+      "title": "Empathy",
+      "description": "Considering other people's situations",
+      "session_name": "Session 2",
+      "path": "empathy"
+    },
+    {
+      "prefix": "Self_Leadership",
+      "course": "17",
+      "title": "Self Leadership",
+      "description": "Improving accountability, initiative and responsibility",
+      "session_name": "Session 3",
+      "path": "self-leadership"
+    },
+    {
+      "prefix": "C3",
+      "course": "03",
+      "title": "Solution Finding",
+      "description": "Effective mindsets for finding solutions",
+      "session_name": "Session 4",
+      "path": "solution-finding"
+    },
+    {
+      "prefix": "F6",
+      "course": "06",
+      "title": "Verbal communication",
+      "description": "Verbal communication skills online",
+      "session_name": "Session 5",
+      "path": "verbal-communication"
+    }
+  ]
+}

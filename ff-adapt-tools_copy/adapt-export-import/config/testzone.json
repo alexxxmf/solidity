@@ -1,0 +1,55 @@
+{
+    "title": "Freeformers Test Zone",
+    "name" : "testzone",
+    "bucket": "ff-content-delivery",
+    "directory": "advocate/testzone/sessions",
+    "config" : "advocate/testzone/sessions/topics.json",
+    "generate_full": true,
+    "generate_version": "1.02",
+    "language": "en",
+    "distribution": "E1I0WUQ4GOKXBY",
+    "url": "https://content.freeformers.com",
+    "theme": "ff-advocate-adapt-theme",
+    "roots": [
+      {
+          "prefix": "B2",
+          "course": "01",
+          "title": "Always learning",
+          "description": "Being open-minded in a digital world",
+          "session_name": "Session 1",
+          "path": "always-learning-tesco"
+      },
+      {
+        "prefix": "C3",
+        "course": "03",
+        "title": "Finding the answer #1",
+        "description": "Effective mindsets for finding solutions",
+        "session_name": "Session 3",
+        "path": "finding-the-answer-1",
+        "override_adapt_course": "HMC_C(03)"
+      },
+      {
+        "prefix": "E5",
+        "course": "05",
+        "title": "Adaptability",
+        "description": "Thriving in a digital world",
+        "session_name": "Session 5",
+        "path": "adaptability",
+        "override_adapt_course": "HMC_C(05)"
+      }
+     
+    ],
+    "groups": [
+
+      {
+          "title": "Group 1",
+          "sessionIds": ["03", "01"]
+      },
+      {
+          "title": "Group 2",
+          "sessionIds": ["05"]
+      }
+    ]
+    
+  }
+

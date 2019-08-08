@@ -1,0 +1,10 @@
+.idea/
+*.iml
+/assets/
+/courses/
+/exported-assets/
+/exported-courses/
+/packages/
+/build/
+node_modules/
+

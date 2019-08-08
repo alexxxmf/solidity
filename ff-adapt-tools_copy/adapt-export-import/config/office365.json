@@ -1,0 +1,46 @@
+{
+  "bucket": "ff-content-delivery",
+  "directory": "advocate/office365/sessions",
+  "distribution": "E1I0WUQ4GOKXBY",
+  "theme": "ff-advocate-adapt-theme",
+  "title": "Freeformers Office 365 Modules",
+  "name" : "Office 356 Demo",
+  "generate_full": true,
+  "generate_version": "1.01",
+  "language": "en",
+  "url": "https://content.freeformers.com",
+  "roots": [
+    {
+      "prefix": "A1",
+      "course": "20",
+      "title": "Always Learning",
+      "description": "Being open-minded in a digital world",
+      "session_name": "Session 1",
+      "path": "always-learning"
+    },
+    {
+      "prefix": "K11",
+      "course": "21",
+      "title": "Sharing with Office 365",
+      "description": "Sharing files using SharePoint and OneDrive",
+      "session_name": "Session 2",
+      "path": "sharing-office365"
+    },
+    {
+      "prefix": "F6",
+      "course": "22",
+      "title": "Communicating with Office 365",
+      "description": "Improving communication with Microsoft Teams",
+      "session_name": "Session 3",
+      "path": "communicating-office365"
+    },
+    {
+      "prefix": "Integrity",
+      "course": "23",
+      "title": "Collaborating with Office 365",
+      "description": "Online collaboration using Office 365 tools",
+      "session_name": "Session 4",
+      "path": "collaborating-office365"
+    }
+  ]
+}

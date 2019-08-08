@@ -1,0 +1,54 @@
+{
+  "bucket": "ff-content-delivery",
+  "directory": "advocate/dlife/sessions",
+  "distribution": "E1I0WUQ4GOKXBY",
+  "theme": "ff-advocate-adapt-theme",
+  "title": "Freeformers Digital Life Modules",
+  "name" : "Digital Life Demo",
+  "generate_full": true,
+  "generate_version": "1.01",
+  "language": "en",
+  "url": "https://content.freeformers.com",
+  "roots": [
+    {
+      "prefix": "A1",
+      "course": "01",
+      "title": "Always Learning",
+      "description": "Being open-minded in a digital world",
+      "session_name": "Session 1",
+      "path": "always-learning"
+    },
+    {
+      "prefix": "B2",
+      "course": "02",
+      "title": "Safe Passwords",
+      "description": "Improving password safety",
+      "session_name": "Session 2",
+      "path": "passwords"
+    },
+    {
+      "prefix": "Imagination",
+      "course": "14",
+      "title": "Mastering your mobile",
+      "description": "Harness the power of your smartphone",
+      "session_name": "Session 3",
+      "path": "mastering-mobile"
+    },
+    {
+      "prefix": "C3",
+      "course": "03",
+      "title": "Solution Finding",
+      "description": "Effective mindsets for finding solutions",
+      "session_name": "Session 4",
+      "path": "solution-finding"
+    },
+    {
+      "prefix": "Forward_Thinking",
+      "course": "15",
+      "title": "Forward Thinking",
+      "description": "Making sense of the ever-changing world",
+      "session_name": "Session 5",
+      "path": "forward-thinking"
+    }
+  ]
+}

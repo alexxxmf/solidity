@@ -1,0 +1,55 @@
+{
+  "title": "Freeformers Mentor Modules",
+  "name" : "core",
+  "bucket": "ff-content-delivery",
+  "directory": "advocate/config",
+  "config" : "advocate/config/sessions.json",
+  "generate_full": true,
+  "generate_version": "1.02",
+  "language": "en",
+  "distribution": "E1I0WUQ4GOKXBY",
+  "url": "https://content.freeformers.com",
+  "theme": "ff-advocate-adapt-theme",
+  "roots": [
+    {
+      "prefix": "A1",
+      "course": "01",
+      "title": "Always learning: Sample",
+      "description": "Being open-minded in a digital world",
+      "session_name": "Session 1",
+      "path": "always-learning"
+    },
+    {
+      "prefix": "Imagination",
+      "course": "31",
+      "title": "Mastering your mobile: Sample",
+      "description": "Harnessing the power of your smartphone",
+      "session_name": "Session 2",
+      "path": "mastering-your-mobile"
+    },
+    {
+      "prefix": "Empathy",
+      "course": "32",
+      "title": "Empathy: Sample",
+      "description": "Considering other people's situations",
+      "session_name": "Session 3",
+      "path": "empathy"
+    },
+    {
+      "prefix": "B2",
+      "course": "33",
+      "title": "Safe passwords: Sample",
+      "description": "Improving password safety",
+      "session_name": "Session 4",
+      "path": "passwords"
+    },
+    {
+      "prefix": "K11",
+      "course": "34",
+      "title": "Sharing with Office 365: Sample",
+      "description": "Sharing files using Office 365",
+      "session_name": "Session 5",
+      "path": "sharing-office-365"
+    }
+  ]
+}

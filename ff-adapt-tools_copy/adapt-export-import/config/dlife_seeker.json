@@ -1,0 +1,24 @@
+{
+  "bucket": "ff-content-delivery",
+  "directory": "advocate/dlife_seeker/sessions",
+  "distribution": "E1I0WUQ4GOKXBY",
+  "theme": "ff-advocate-adapt-theme",
+  "title": "Freeformers Digital Life Modules",
+  "name" : "Digital Life Demo for Seekersync",
+  "query" : "^FRE_SYNC_C([0-9]+)_M([0-9]+)\\s.*$",
+  "generate_full": true,
+  "seeker_enabled" : true,
+  "generate_version": "1.01",
+  "language": "en",
+  "url": "https://content.freeformers.com",
+  "roots": [
+    {
+      "prefix": "B2",
+      "course": "02",
+      "title": "Safe Passwords",
+      "description": "Improving password safety",
+      "session_name": "Session 1",
+      "path": "passwords"
+    }
+  ]
+}

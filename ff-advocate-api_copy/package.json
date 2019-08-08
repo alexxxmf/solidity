@@ -1,0 +1,14 @@
+{
+  "name": "advocate_api",
+  "license": "UNLICENSED",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^1.38.0",
+    "serverless-domain-manager": "^2.6.13",
+    "serverless-dotenv-plugin": "^2.0.1",
+    "serverless-python-requirements": "^4.2.5",
+    "serverless-wsgi": "^1.7.0"
+  }
+}

@@ -1,0 +1,33 @@
+service: advocate-api-django
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: eu-west-1
+
+functions:
+  graphql:
+    handler: wsgi_handler.handler
+    environment:
+      DATABASE_URL: ${env:DATABASE_URL}
+    layers:
+      - arn:aws:lambda:eu-west-1:740512465167:layer:psycopg2:1
+    events:
+      - http: ANY /
+      - http: ANY {proxy+}
+
+plugins: 
+  - serverless-python-requirements
+  - serverless-wsgi
+  - serverless-dotenv-plugin
+  - serverless-domain-manager
+
+custom:
+  wsgi:
+    app: advocate_api.wsgi.application
+  stage: ${opt:stage, self:provider.stage}
+  customDomain:
+    domainName: ${file(./scripts/resolveNames.js):domainName}
+    basePath: ""
+    stage: ${opt:stage, self:provider.stage}
+    createRoute53Record: true

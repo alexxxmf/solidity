@@ -1,0 +1,1 @@
+By accepting the access to this private repo you commit yourself to not make a copy or disclose this code.

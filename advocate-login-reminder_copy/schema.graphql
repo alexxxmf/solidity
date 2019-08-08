@@ -1,0 +1,248 @@
+type SendResult {
+  """
+  Was the email sent
+  """
+  sent: Boolean!
+  """
+  What was the email the API sent to (emails are cleaned up)
+  """
+  email: String!
+  """
+  Was this a newly created record -- i.e. a new email address
+  """
+  createdInvite: Boolean!
+  """
+  Some users can log-in automatically, if so, these are their details
+  """
+  autoLoginUserOptions: UserOptions
+  """
+  What was the platform used to sign in
+  """
+  platform: String!
+}
+
+type SendIfVersionAccepted {
+  versionAccepted: Boolean!
+}
+
+input LogDeliveredSessionInput {
+  """
+  Advocate's email address
+  """
+  userEmail: String!
+  """
+  ID of the delivered session
+  """
+  sessionId: String!
+  """
+  ISO-8601, when did delivery begin
+  """
+  sessionStart: String!
+  """
+  ISO-8601, when did delivery complete
+  """
+  sessionEnd: String!
+  """
+  JSON, the participants who attended
+  """
+  participants: String
+  """
+  Number of delivered-to participants
+  """
+  participantsCount: Int
+  """
+   Any extra JSON data
+  """
+  extra: String!
+}
+
+type LogDeliveredSessionResult {
+  """
+  ID for the delivered session
+  """
+  deliveredSessionId: ID!
+}
+
+type Flags {
+  notes: Boolean
+  print: Boolean
+  download: Boolean
+  flash: Boolean
+  participants: Boolean
+  attributes: Boolean
+  participantsWheel: Boolean
+}
+
+type Theme {
+  primary: String!
+}
+
+type UserOptions {
+  """
+  The user's email address
+  """
+  email: String!
+  """
+  Unique identifier per user
+  """
+  userId: String!
+  """
+  Name of this user
+  """
+  userName: String
+  """
+  Location of the session/curriculum configuration JSON
+  """
+  sessionsConfigUrl: String!
+  """
+  Base URL to use to construct URLs for content
+  """
+  baseSessionContentUrl: String!
+  """
+  Feature flags for this user, if null, use default flag value
+  """
+  flags: Flags!
+  """
+  The user's app title based on the email address
+  """
+  brandingTitle: String!
+  """
+  The user's app title based on the email address
+  """
+  theme: Theme!
+  """
+  The ID of the programme the user is currently using
+  """
+  programmeId: Int!
+  """
+  Delivery metadata for the programme
+  """
+  deliveryMetadata: DeliveryMetadata!
+}
+
+type Location {
+  label: String!
+  required: Boolean!
+  format: String!
+}
+
+type DeliveryMetadata {
+  location: Location
+}
+
+type CheckLoginTokenResult {
+  """
+  Was the token valid for login
+  """
+  valid: Boolean!
+  """
+  If valid, the user options to use in the app
+  """
+  userOptions: UserOptions
+  """
+  Persistent user token to use in the app
+  """
+  persistentUserToken: String
+}
+
+type CheckProgrammeCodeResult {
+  """
+  Was the token valid for login
+  """
+  valid: Boolean!
+  """
+  If valid, the user options to use in the app
+  """
+  userOptions: UserOptions
+}
+
+type GetPersistentUserOptionsResult {
+  """
+  Persistent user options to use in the app
+  """
+  userOptions: UserOptions
+}
+
+# this schema allows the following mutation:
+type Mutation {
+  """
+  Send an email with a login reminder to link to an advocate
+  """
+  sendLoginReminder(email: String!, platform: String): SendResult!
+
+  """
+  Check and consume a login token
+  """
+  checkLoginToken(token: String!, platform: String): CheckLoginTokenResult!
+
+  """
+  Log that an advocate has delivered a session to some participants
+  """
+  logDeliveredSession(input: LogDeliveredSessionInput!): LogDeliveredSessionResult!
+
+  """
+  Updates the username for an existing user, returning an updated user payload
+  """
+  updateUsername(userEmail: String!, userName: String!, platform: String): UserOptions!
+
+  """
+  Tries to gain access to a programme via a secret code
+  """
+  checkProgrammeCode(programmeCode: String!, userEmail: String!, platform: String): CheckProgrammeCodeResult!
+
+  """
+  Changes the current programme for a user
+  """
+  switchCurrentProgramme(userEmail: String!, programmeId: Int!, platform: String): UserOptions!
+  """
+  Returns persistent user options
+  """
+  getPersistentUserOptions(token: String!, platform: String): GetPersistentUserOptionsResult!
+}
+
+
+enum AppPlatform {
+  ios
+  android
+}
+
+type ListUserProgrammesItem {
+  """
+  The title of the programme
+  """
+  brandingTitle: String!
+  """
+  The ID of the programme
+  """
+  programmeId: Int!
+  """
+  Is this the user's current programme?
+  """
+  currentProgramme: Boolean!
+}
+
+type ListUserProgrammesResult {
+  programmes: [ListUserProgrammesItem!]!
+}
+
+type Query {
+  """
+  Smoke test that the server is working
+  """
+  hello: String!
+
+  """
+  Check minimum version for the app
+  """
+  acceptableMinimumVersion(platform: AppPlatform, currentVersion: String): SendIfVersionAccepted!
+
+  """
+  Gets all the programmes a user is associated with
+  """
+  listUserProgrammes(userEmail: String): ListUserProgrammesResult!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

@@ -1,0 +1,254 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: advocate-login-reminder # NOTE: update this with your service name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-1
+  environment:
+    DYNAMODB_MINIMUM_VERSIONS_TABLE: ${self:service}-${self:custom.stage}-minimumVersions
+    DYNAMODB_INVITED_USERS_TABLE: ${self:service}-${self:custom.stage}-invitedUsers
+    DYNAMODB_DELIVERED_SESSIONS_TABLE: ${self:service}-${self:custom.stage}-deliveredSessions
+    DYNAMODB_LOGIN_TOKENS_TABLE: ${self:service}-${self:custom.stage}-loginTokens
+    DYNAMODB_HMCTS_USERS_TABLE: ${self:service}-${self:custom.stage}-hmctsUsers
+    DYNAMODB_MEMBERSHIPS_TABLE: ${self:service}-${self:custom.stage}-memberships
+    DYNAMODB_PROGRAMMES_DATA_TABLE: ${self:service}-${self:custom.stage}-programmes-data
+    DYNAMODB_PROGRAMMES_CODES_TABLE: ${self:service}-${self:custom.stage}-programmes-codes
+    DYNAMODB_PROGRAMMES_MATCHING_TABLE: ${self:service}-${self:custom.stage}-programmes-matching
+    DYNAMODB_PERSISTENT_USER_TOKENS_TABLE: ${self:service}-${self:custom.stage}-persistent-user-tokens
+    DYNAMODB_SEEKER_INVITED_USERS_TABLE: ${self:service}-${self:custom.stage}-seeker-invitedUsers
+    MANDRILL_API_KEY: ${env:MANDRILL_API_KEY}
+    ROLLBAR_ACCESS_TOKEN: ${env:ROLLBAR_ACCESS_TOKEN, ''}
+    ROLLBAR_ENVIRONMENT: ${env:ROLLBAR_ENVIRONMENT, 'testing'}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "dynamodb:GetItem"
+        - "dynamodb:UpdateItem"
+        - "dynamodb:PutItem"
+        - "dynamodb:Scan"
+        - "dynamodb:Query"
+        - "dynamodb:DeleteItem"
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:*"
+
+functions:
+  graphql:
+    handler: handler.graphql
+    events:
+      - http:
+          path: graphql
+          method: post
+          cors: true
+          integration: lambda-proxy
+#    Define function environment variables here
+#    environment:
+#      variable2: value2
+
+# you can add CloudFormation resource templates here
+resources:
+  Resources:
+    minimumVersionsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_MINIMUM_VERSIONS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: platform
+            AttributeType: S
+        KeySchema:
+          - AttributeName: platform
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    invitedUsersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_INVITED_USERS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    deliveredSessionsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_DELIVERED_SESSIONS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: deliveredSessionId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: deliveredSessionId
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    loginTokensTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_LOGIN_TOKENS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: token
+            AttributeType: S
+        KeySchema:
+          - AttributeName: token
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    hmctsUsersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_HMCTS_USERS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    membershipsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_MEMBERSHIPS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: userEmail
+            AttributeType: S
+          - AttributeName: programmeId
+            AttributeType: N
+        KeySchema:
+          - AttributeName: userEmail
+            KeyType: HASH
+          - AttributeName: programmeId
+            KeyType: RANGE
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    programmesDataTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_PROGRAMMES_DATA_TABLE}
+        AttributeDefinitions:
+          - AttributeName: programmeId
+            AttributeType: N
+        KeySchema:
+          - AttributeName: programmeId
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    programmesCodesTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_PROGRAMMES_CODES_TABLE}
+        AttributeDefinitions:
+          - AttributeName: programmeCode
+            AttributeType: S
+        KeySchema:
+          - AttributeName: programmeCode
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    programmesMatching:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_PROGRAMMES_MATCHING_TABLE}
+        AttributeDefinitions:
+          - AttributeName: emailMatch
+            AttributeType: S
+        KeySchema:
+          - AttributeName: emailMatch
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    persistentUserTokensTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_PERSISTENT_USER_TOKENS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: token
+            AttributeType: S
+        KeySchema:
+          - AttributeName: token
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+    seekerInvitedUsersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ${self:provider.environment.DYNAMODB_SEEKER_INVITED_USERS_TABLE}
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+        PointInTimeRecoverySpecification:
+          PointInTimeRecoveryEnabled: true
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+
+plugins:
+  - serverless-domain-manager
+  - serverless-webpack
+  - serverless-dotenv-plugin
+  - serverless-dynamodb-local
+  - serverless-offline #serverless-offline needs to be last in the list
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  customDomain:
+    domainName: ${file(./scripts/resolveNames.js):domainName}
+    basePath: ""
+    stage: ${opt:stage, self:provider.stage}
+    createRoute53Record: true
+  dynamodb:
+    start:
+      port: 8000
+      inMemory: true
+      migrate: true

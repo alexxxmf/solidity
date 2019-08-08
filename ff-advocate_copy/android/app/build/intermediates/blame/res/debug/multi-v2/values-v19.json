@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/alexxxmf/Projects/ff-advocate/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "857"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "252",
+                        "endLines": "16",
+                        "endColumns": "12",
+                        "endOffsets": "1009"
+                    }
+                },
+                {
+                    "source": "/Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,127",
+                        "endColumns": "71,79",
+                        "endOffsets": "122,202"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,172",
+                        "endColumns": "71,79",
+                        "endOffsets": "167,247"
+                    }
+                }
+            ]
+        }
+    ]
+}

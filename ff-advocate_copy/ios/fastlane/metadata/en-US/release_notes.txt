@@ -1,0 +1,7 @@
+*** IMPROVEMENTS ***
+• Better performance.
+
+*** FIXED ***
+• Fixed some bugs in the help centre.
+
+Submit your suggestions for improvements to ios@freeformers.com we value your feedback.

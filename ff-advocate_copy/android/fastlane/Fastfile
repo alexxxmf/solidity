@@ -1,0 +1,179 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  # desc "Runs all the tests"
+  # lane :test do
+  #   gradle(task: "test")
+  # end
+
+  # desc "Submit a new Beta Build to Crashlytics Beta"
+  # lane :beta do
+  #   gradle(task: "clean assembleRelease")
+  #   crashlytics
+
+  #   # sh "your_script.sh"
+  #   # You can also use other beta testing services here
+  # end
+
+  # desc "Deploy a new version to the Google Play"
+  # lane :deploy do
+  #   gradle(task: "clean assembleRelease")
+  #   upload_to_play_store
+  # end
+  desc 'Check that the current version code is higher than the one in Play Store Alpha track'
+  lane :check_version_code_versus_playstore do
+    if ENV.has_key?('GOOGLE_DEVELOPER_SERVICE_ACCOUNT_ACTOR_FASTLANE')
+      UI.message("Using Environment Variable for Play Store service account")
+      ps_version_codes = google_play_track_version_codes(
+        track: 'alpha',
+        json_key_data: ENV['GOOGLE_DEVELOPER_SERVICE_ACCOUNT_ACTOR_FASTLANE']
+      )
+    else
+      UI.message('Using implied Play Store service account')
+      ps_version_codes = google_play_track_version_codes(
+        track: 'alpha',
+        json_key: '~/Google-Play-Android-Developer-534120eadfd5.json'
+      )
+    end
+
+    curr_version_code = android_get_version_code
+
+    if ps_version_codes.include? curr_version_code.to_i
+      UI.user_error!("Your version code #{curr_version_code} has already been used in the Play Store's Alpha track. Run the `bump_version_code` lane.")
+      return 1
+    end
+
+    if ENV.has_key?('GOOGLE_DEVELOPER_SERVICE_ACCOUNT_ACTOR_FASTLANE')
+      UI.message("Using Environment Variable for Play Store service account")
+      production_version_codes = google_play_track_version_codes(
+        track: 'production',
+        json_key_data: ENV['GOOGLE_DEVELOPER_SERVICE_ACCOUNT_ACTOR_FASTLANE']
+      )
+    else
+      UI.message('Using implied Play Store service account')
+      production_version_codes = google_play_track_version_codes(
+        track: 'production',
+        json_key: '~/Google-Play-Android-Developer-534120eadfd5.json'
+      )
+    end
+
+    if production_version_codes.include? curr_version_code.to_i
+      UI.user_error!("Your version code #{curr_version_code} has already been used in the Play Store's Production track. Run the `bump_version_code` lane.")
+      return 1
+    end
+
+  end
+
+  desc 'Bump version code'
+  lane :bump_version_code do
+    ensure_git_status_clean
+    android_set_version_code
+    git_commit(
+      path: [
+        "./app/build.gradle",
+      ],
+      message: "Android: Bump Build to #{android_get_version_code}"
+    )
+  end
+
+
+  desc "Build, Sign and Submit a new build to the Play Store"
+  desc "This build will be added to the Alpha closed release track"
+  lane :release_to_alpha do
+    check_version_code_versus_playstore
+    gradle(
+      task: 'assemble',
+      build_type: 'Release'
+    )
+
+    if ENV.has_key?('GOOGLE_DEVELOPER_SERVICE_ACCOUNT_ACTOR_FASTLANE')
+      UI.message("Using Environment Variable for Play Store service account")
+      supply(
+        track: 'alpha',
+        json_key_data: ENV['GOOGLE_DEVELOPER_SERVICE_ACCOUNT_ACTOR_FASTLANE']
+      )
+    else
+      UI.message("Using implied Play Store service account")
+      supply(
+        track: 'alpha',
+        json_key: "~/Google-Play-Android-Developer-534120eadfd5.json"
+      )
+    end
+
+    slack(
+      message: '🤖 New Android build launched. Available soon to Alpha testers on Play Store.',
+      use_webhook_configured_username_and_icon: true,
+      payload: {
+        'Version' => android_get_version_code,
+      },
+      default_payloads: [:git_author]
+    )
+  end
+
+  desc 'Export build number as ENV variable'
+  lane :export_build_number do
+    build_number = android_get_version_code
+    File.write("build_version_TMP.txt", build_number)
+  end
+
+  desc 'Update Android app icons and launcher images'
+  lane :makeicons do
+    android_appicon(
+      appicon_image_file: 'fastlane/metadata/ic_launcher.png',
+      appicon_icon_types: [:launcher],
+      appicon_path: 'app/src/main/res/mipmap'
+    )
+    android_appicon(
+      appicon_image_file: 'fastlane/metadata/ic_launcher.png',
+      appicon_icon_types: [:notification],
+      appicon_path: 'app/src/main/res/drawable',
+      appicon_filename: 'ic_notification'
+    )
+  end
+
+  desc 'Deploy a new beta version to the Google Play store'
+  lane :beta do
+    gradle(task: 'clean')
+    gradle(
+      task: 'assemble',
+      build_type: 'Release'
+    )
+    supply(track: 'beta')
+    # slack(message: 'Successfully distributed a new beta build to the play store')
+  end
+
+  lane :justsupply do
+    supply(track: 'beta')
+  end
+
+  desc 'Deploy a new INTERNAL version to the Google Play store'
+  lane :internal do
+    android_set_version_code
+    gradle(task: 'clean')
+    gradle(
+      task: 'assemble',
+      build_type: 'Release'
+    )
+    supply(track: 'internal')
+    # slack(message: 'Successfully distributed a new beta build to the play store')
+  end
+
+  lane :justsupplyinternal do
+    supply(track: 'internal')
+  end
+end

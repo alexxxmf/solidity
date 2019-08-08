@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/AnimatableLayers/LOTLayerContainer.m \
+  /Users/alexxxmf/Projects/ff-advocate/ios/build/digitalmentor/Build/Intermediates.noindex/Lottie.build/Debug-iphonesimulator/Lottie_iOS.build/module.modulemap \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/AnimatableLayers/LOTLayerContainer.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/MacCompatability/LOTPlatformCompat.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTLayer.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/AnimatableProperties/LOTKeyframe.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/AnimatableProperties/LOTBezierData.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTLayerGroup.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTKeypath.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTValueDelegate.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTTransformInterpolator.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTNumberInterpolator.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTValueInterpolator.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTPointInterpolator.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTSizeInterpolator.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/RenderNodes/LOTRenderGroup.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/LOTRenderNode.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/LOTAnimatorNode.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Extensions/LOTBezierPath.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Extensions/LOTHelpers.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Extensions/UIColor+Expanded.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/AnimatableLayers/LOTMaskContainer.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTMask.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTAsset.h \
+  /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTCacheProvider.h

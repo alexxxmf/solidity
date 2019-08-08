@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "559412561211",
+    "firebase_url": "https://digitalmentor-e1763.firebaseio.com",
+    "project_id": "digitalmentor-e1763",
+    "storage_bucket": "digitalmentor-e1763.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559412561211:android:3b20410ab3c7b0ae",
+        "android_client_info": {
+          "package_name": "com.freeformers.b2c.digitalmentor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559412561211-mgea1g8g6111r6rh68jtiv6ddsa76gnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCUpsTrG_6r_U0RPOKYpvVE53TsSoW9zM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

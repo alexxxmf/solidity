@@ -1,0 +1,847 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:1-78:12
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:1-78:12
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:1-78:12
+MERGED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:1-78:12
+MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/3afb035c4e283515db0a5fd53ea520cf/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e519272c6aa89fa8ade8c23d8c62cfd6/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-keep-awake] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:rollbar-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/rollbar-react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:lottie-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-react-native/src/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:react-native-splash-screen] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:@react-native-community_async-storage] /Users/alexxxmf/Projects/ff-advocate/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-branch] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-branch/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-config] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-config/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-email-link] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-email-link/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-intercom] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-intercom/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-restart] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-restart/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-uuid-generator] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-uuid-generator/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-wheel-pick] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-wheel-pick/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/6952a385c287077d02a61569fd04bc7a/AndroidManifest.xml:2:1-13:12
+MERGED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:2:1-19:12
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:2:1-85:12
+MERGED from [com.airbnb.android:lottie:2.5.6] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/lottie-2.5.6.aar/5116869b867712cd7ab10d85261d4a6b/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/949b20b894a289a1af22d84673814c48/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ee91335a897d8cc8bacbbe3288c26519/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:17:1-55:12
+MERGED from [com.rollbar:rollbar-android:1.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/rollbar-android-1.4.0.aar/f2bc10d30cb050b0593f5a9d95504479/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.1.aar/9e5eda6a2239ba745764f645e7ade4a9/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/13b8f1fb71cae14aa5d7e23b7b2b309f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/aeca836ffcc268657150578241974881/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/68befdabd140451a30ec0f75771a890a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/6e3e416721c19863e68463fd2229ad70/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/249f17d30f87599f553e1bec6303709f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/ff14ade115e24369e58ea74bcd2d0502/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/69e92ac6cea66da1a61dfb261b2006f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bdb4de8f6aef2c39861fb13f23be3973/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/3d9bad548f91a9089e81d2cd5d2edc27/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/431fcf9583b30a5a9ae3904fa1125a24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/f1e500b6fd3eebbd6c9f96cc63c06516/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c9eb5c83de03c27de5fa089864ef79e4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/d121c9ef28fc97765add332e1d9ea931/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8d09d4117b42c0dd288a083a8948f0e2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4cc54c5628aaa65e1b4643b45e01ea50/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c31ffde2021be1c7bbe7484540f3a94a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/dc3ab4406bde49211dc620ef675d3520/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e0032f017c1428a329781e4828d435c6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/838c7effb0a8334e5b10a0487738b2da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/5bceee03aef3b88222debe2dea1ab42c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/29d50fb819bac521bbae87c1267673b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d776f2143d879661f4e403e2d5a7764e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a49e1eb14a12e7114757ea58e4d37d1d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/34a39fa9d3938dd3c433f05188d9df60/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e13aea7ec876fe8571e313857bd18675/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/748bfe327eef6d5cf91eac58e07db6cb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fc21ce5d1fa309d4d912e5d3517e370e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6ae648627f52e859b75b9b30354db83b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/40e43acb57a4f43b0a3608bf53e64f49/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/968a8c192e60eba3ced8c6fc0c5cf62a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8d20e05fc4669deaf463fdf81428a8d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/909c20c22d19f4b80465ac7b83d993a6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2259e1ce64e1630c426f3ec33b0ea73d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8e33141633190d4160fd366dd5c24b0d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/675a4d4051aa52ce39acbe2efd1d2d3c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/4ef1633364cf4cf7f36083238d1e3b7d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/ddb928c8d94d2258e7131998c6f1ad8f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/bf31d65777c58783e57f9bd804a384cb/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7177ca2329b22dacf00ab39c21066a52/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/682f283a65442c0d48ce0a404573c4c3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4e0d55f4b9f9d4c25f6234f0968b718f/AndroidManifest.xml:2:1-13:12
+MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/WheelPicker-1.0.3.aar/99c0d2301f006f73ed11cd4dc4e9a8ed/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/558d5cce907c05aedd62a2de473b1c1b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.intercom:android-composer:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-2.0.2.aar/05730e508c2d1bc6714c245e7951e835/AndroidManifest.xml:2:1-11:12
+MERGED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android:flexbox:1.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/flexbox-1.0.0.aar/41fcf3592e910f3b7adcbe080cede63c/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/42bf12d56957dc3170747e8ed482425b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/c67e598c997c3c68862e2b77ba1cce14/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:2:5-48
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:2:5-48
+	android:versionName
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:1-78:12
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:1-78:12
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:lottie-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-react-native/src/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:lottie-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-react-native/src/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:10:5-67
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:23:5-67
+MERGED from [com.rollbar:rollbar-android:1.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/rollbar-android-1.4.0.aar/f2bc10d30cb050b0593f5a9d95504479/AndroidManifest.xml:11:5-67
+MERGED from [com.rollbar:rollbar-android:1.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/rollbar-android-1.4.0.aar/f2bc10d30cb050b0593f5a9d95504479/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:8:5-76:19
+MERGED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:8:5-76:19
+MERGED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:8:5-76:19
+MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/3afb035c4e283515db0a5fd53ea520cf/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/3afb035c4e283515db0a5fd53ea520cf/AndroidManifest.xml:7:5-20
+MERGED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [:react-native-splash-screen] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-splash-screen] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/6952a385c287077d02a61569fd04bc7a/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/6952a385c287077d02a61569fd04bc7a/AndroidManifest.xml:11:5-20
+MERGED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:10:5-17:19
+MERGED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:10:5-17:19
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:12:5-83:19
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:12:5-83:19
+MERGED from [com.airbnb.android:lottie:2.5.6] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/lottie-2.5.6.aar/5116869b867712cd7ab10d85261d4a6b/AndroidManifest.xml:11:5-20
+MERGED from [com.airbnb.android:lottie:2.5.6] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/lottie-2.5.6.aar/5116869b867712cd7ab10d85261d4a6b/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/949b20b894a289a1af22d84673814c48/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/949b20b894a289a1af22d84673814c48/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.1.aar/9e5eda6a2239ba745764f645e7ade4a9/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.1.aar/9e5eda6a2239ba745764f645e7ade4a9/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/13b8f1fb71cae14aa5d7e23b7b2b309f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/13b8f1fb71cae14aa5d7e23b7b2b309f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/aeca836ffcc268657150578241974881/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/aeca836ffcc268657150578241974881/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/68befdabd140451a30ec0f75771a890a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/68befdabd140451a30ec0f75771a890a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/6e3e416721c19863e68463fd2229ad70/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/6e3e416721c19863e68463fd2229ad70/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/249f17d30f87599f553e1bec6303709f/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/249f17d30f87599f553e1bec6303709f/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a49e1eb14a12e7114757ea58e4d37d1d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a49e1eb14a12e7114757ea58e4d37d1d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/34a39fa9d3938dd3c433f05188d9df60/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/34a39fa9d3938dd3c433f05188d9df60/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4e0d55f4b9f9d4c25f6234f0968b718f/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4e0d55f4b9f9d4c25f6234f0968b718f/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/558d5cce907c05aedd62a2de473b1c1b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/558d5cce907c05aedd62a2de473b1c1b/AndroidManifest.xml:9:5-20
+MERGED from [com.intercom:android-composer:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-2.0.2.aar/05730e508c2d1bc6714c245e7951e835/AndroidManifest.xml:9:5-20
+MERGED from [com.intercom:android-composer:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-2.0.2.aar/05730e508c2d1bc6714c245e7951e835/AndroidManifest.xml:9:5-20
+MERGED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:9:5-17:19
+MERGED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:9:5-17:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/42bf12d56957dc3170747e8ed482425b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/42bf12d56957dc3170747e8ed482425b/AndroidManifest.xml:7:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a49e1eb14a12e7114757ea58e4d37d1d/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:10:7-39
+	xmlns:tools
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:14:7-53
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:14:7-53
+	tools:ignore
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:7:75-114
+	tools:targetApi
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:11:7-41
+	android:allowBackup
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:12:7-33
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:12:7-33
+	android:theme
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:13:7-38
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:13:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:9:7-38
+activity#com.freeformers.b2c.digitalmentor.SplashActivity
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:16:7-25:18
+	android:label
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:19:9-41
+	android:theme
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:18:9-43
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:17:9-39
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:20:9-24:25
+action#android.intent.action.MAIN
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:21:11-63
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:21:19-60
+category#android.intent.category.LAUNCHER
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:22:11-71
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:22:21-68
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:23:11-75
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:23:19-73
+activity#com.freeformers.b2c.digitalmentor.MainActivity
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:28:7-54:18
+	android:screenOrientation
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:33:9-45
+	android:label
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:31:9-41
+	android:launchMode
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:30:9-40
+	android:windowSoftInputMode
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:34:9-51
+	android:configChanges
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:32:9-79
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:29:9-37
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:digitalmentor
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:37:9-42:25
+data
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:38:11-50
+	android:scheme
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:38:17-47
+action#android.intent.action.VIEW
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:39:11-63
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:39:19-60
+category#android.intent.category.DEFAULT
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:40:11-70
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:40:21-67
+category#android.intent.category.BROWSABLE
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:41:11-72
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:41:21-69
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:frf-alternate.app.link+data:host:frf-alternate.test-app.link+data:host:frf.app.link+data:host:frf.test-app.link+data:scheme:https+data:scheme:https+data:scheme:https+data:scheme:https
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:45:9-53:25
+	android:autoVerify
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:45:24-49
+meta-data#io.branch.sdk.BranchKey
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:57:7-117
+	android:value
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:57:57-114
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:57:18-56
+meta-data#io.branch.sdk.BranchKey.test
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:58:7-122
+	android:value
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:58:62-119
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:58:18-61
+meta-data#io.branch.sdk.TestMode
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:59:7-80
+	android:value
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:59:56-77
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:59:18-55
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:61:7-84
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:61:17-81
+service#com.robinpowered.react.Intercom.IntercomIntentService
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:64:7-71:17
+	android:exported
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:66:9-33
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:65:9-77
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:67:9-70:25
+	android:priority
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:68:11-33
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:69:13-76
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:69:21-74
+receiver#io.intercom.android.sdk.push.IntercomPushBroadcastReceiver
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:72:7-75:35
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:68:9-77:20
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:68:9-77:20
+	android:exported
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:75:9-32
+		REJECTED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:70:13-37
+	tools:replace
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:74:9-41
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml:73:9-82
+uses-sdk
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/3afb035c4e283515db0a5fd53ea520cf/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/3afb035c4e283515db0a5fd53ea520cf/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:multidex:1.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e519272c6aa89fa8ade8c23d8c62cfd6/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e519272c6aa89fa8ade8c23d8c62cfd6/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-keep-awake] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-keep-awake] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rollbar-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/rollbar-react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rollbar-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/rollbar-react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:lottie-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-react-native/src/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:lottie-react-native] /Users/alexxxmf/Projects/ff-advocate/node_modules/lottie-react-native/src/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-splash-screen] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_async-storage] /Users/alexxxmf/Projects/ff-advocate/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /Users/alexxxmf/Projects/ff-advocate/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-branch] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-branch/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-branch] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-branch/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-config] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-config/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-config] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-config/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-email-link] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-email-link/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-email-link] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-email-link/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-intercom] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-intercom/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-intercom] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-intercom/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-restart] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-restart/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-restart] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-restart/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-uuid-generator] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-uuid-generator/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-uuid-generator] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-uuid-generator/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-wheel-pick] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-wheel-pick/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-wheel-pick] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-wheel-pick/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/6952a385c287077d02a61569fd04bc7a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/6952a385c287077d02a61569fd04bc7a/AndroidManifest.xml:7:5-9:41
+MERGED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:6:5-8:41
+MERGED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:6:5-8:41
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:6:5-8:41
+MERGED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:6:5-8:41
+MERGED from [com.airbnb.android:lottie:2.5.6] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/lottie-2.5.6.aar/5116869b867712cd7ab10d85261d4a6b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.airbnb.android:lottie:2.5.6] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/lottie-2.5.6.aar/5116869b867712cd7ab10d85261d4a6b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/949b20b894a289a1af22d84673814c48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/949b20b894a289a1af22d84673814c48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ee91335a897d8cc8bacbbe3288c26519/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ee91335a897d8cc8bacbbe3288c26519/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:20:5-44
+MERGED from [com.rollbar:rollbar-android:1.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/rollbar-android-1.4.0.aar/f2bc10d30cb050b0593f5a9d95504479/AndroidManifest.xml:7:5-9:41
+MERGED from [com.rollbar:rollbar-android:1.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/rollbar-android-1.4.0.aar/f2bc10d30cb050b0593f5a9d95504479/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.1.aar/9e5eda6a2239ba745764f645e7ade4a9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.1.aar/9e5eda6a2239ba745764f645e7ade4a9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/13b8f1fb71cae14aa5d7e23b7b2b309f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/13b8f1fb71cae14aa5d7e23b7b2b309f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/aeca836ffcc268657150578241974881/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/aeca836ffcc268657150578241974881/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/68befdabd140451a30ec0f75771a890a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/68befdabd140451a30ec0f75771a890a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/6e3e416721c19863e68463fd2229ad70/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/6e3e416721c19863e68463fd2229ad70/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/249f17d30f87599f553e1bec6303709f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/249f17d30f87599f553e1bec6303709f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/ff14ade115e24369e58ea74bcd2d0502/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/ff14ade115e24369e58ea74bcd2d0502/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/69e92ac6cea66da1a61dfb261b2006f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/69e92ac6cea66da1a61dfb261b2006f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bdb4de8f6aef2c39861fb13f23be3973/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bdb4de8f6aef2c39861fb13f23be3973/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/3d9bad548f91a9089e81d2cd5d2edc27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/3d9bad548f91a9089e81d2cd5d2edc27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/431fcf9583b30a5a9ae3904fa1125a24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/431fcf9583b30a5a9ae3904fa1125a24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/f1e500b6fd3eebbd6c9f96cc63c06516/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/f1e500b6fd3eebbd6c9f96cc63c06516/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c9eb5c83de03c27de5fa089864ef79e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/c9eb5c83de03c27de5fa089864ef79e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/d121c9ef28fc97765add332e1d9ea931/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/d121c9ef28fc97765add332e1d9ea931/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8d09d4117b42c0dd288a083a8948f0e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/8d09d4117b42c0dd288a083a8948f0e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4cc54c5628aaa65e1b4643b45e01ea50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/4cc54c5628aaa65e1b4643b45e01ea50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c31ffde2021be1c7bbe7484540f3a94a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/c31ffde2021be1c7bbe7484540f3a94a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/dc3ab4406bde49211dc620ef675d3520/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/dc3ab4406bde49211dc620ef675d3520/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e0032f017c1428a329781e4828d435c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e0032f017c1428a329781e4828d435c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/838c7effb0a8334e5b10a0487738b2da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/838c7effb0a8334e5b10a0487738b2da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/5bceee03aef3b88222debe2dea1ab42c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/5bceee03aef3b88222debe2dea1ab42c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/29d50fb819bac521bbae87c1267673b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/29d50fb819bac521bbae87c1267673b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d776f2143d879661f4e403e2d5a7764e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/d776f2143d879661f4e403e2d5a7764e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a49e1eb14a12e7114757ea58e4d37d1d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a49e1eb14a12e7114757ea58e4d37d1d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/34a39fa9d3938dd3c433f05188d9df60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/34a39fa9d3938dd3c433f05188d9df60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e13aea7ec876fe8571e313857bd18675/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e13aea7ec876fe8571e313857bd18675/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/748bfe327eef6d5cf91eac58e07db6cb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/748bfe327eef6d5cf91eac58e07db6cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fc21ce5d1fa309d4d912e5d3517e370e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fc21ce5d1fa309d4d912e5d3517e370e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6ae648627f52e859b75b9b30354db83b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6ae648627f52e859b75b9b30354db83b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/40e43acb57a4f43b0a3608bf53e64f49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/40e43acb57a4f43b0a3608bf53e64f49/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/968a8c192e60eba3ced8c6fc0c5cf62a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/968a8c192e60eba3ced8c6fc0c5cf62a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8d20e05fc4669deaf463fdf81428a8d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8d20e05fc4669deaf463fdf81428a8d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/909c20c22d19f4b80465ac7b83d993a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/909c20c22d19f4b80465ac7b83d993a6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2259e1ce64e1630c426f3ec33b0ea73d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/2259e1ce64e1630c426f3ec33b0ea73d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8e33141633190d4160fd366dd5c24b0d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8e33141633190d4160fd366dd5c24b0d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/675a4d4051aa52ce39acbe2efd1d2d3c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/675a4d4051aa52ce39acbe2efd1d2d3c/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/4ef1633364cf4cf7f36083238d1e3b7d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/4ef1633364cf4cf7f36083238d1e3b7d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/ddb928c8d94d2258e7131998c6f1ad8f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/ddb928c8d94d2258e7131998c6f1ad8f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/bf31d65777c58783e57f9bd804a384cb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/bf31d65777c58783e57f9bd804a384cb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7177ca2329b22dacf00ab39c21066a52/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7177ca2329b22dacf00ab39c21066a52/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/682f283a65442c0d48ce0a404573c4c3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/682f283a65442c0d48ce0a404573c4c3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4e0d55f4b9f9d4c25f6234f0968b718f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4e0d55f4b9f9d4c25f6234f0968b718f/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/WheelPicker-1.0.3.aar/99c0d2301f006f73ed11cd4dc4e9a8ed/AndroidManifest.xml:8:5-10:41
+MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/WheelPicker-1.0.3.aar/99c0d2301f006f73ed11cd4dc4e9a8ed/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/558d5cce907c05aedd62a2de473b1c1b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/558d5cce907c05aedd62a2de473b1c1b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.intercom:android-composer:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-2.0.2.aar/05730e508c2d1bc6714c245e7951e835/AndroidManifest.xml:7:5-44
+MERGED from [com.intercom:android-composer:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-2.0.2.aar/05730e508c2d1bc6714c245e7951e835/AndroidManifest.xml:7:5-44
+MERGED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:7:5-44
+MERGED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:7:5-44
+MERGED from [com.google.android:flexbox:1.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/flexbox-1.0.0.aar/41fcf3592e910f3b7adcbe080cede63c/AndroidManifest.xml:23:5-25:41
+MERGED from [com.google.android:flexbox:1.0.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/flexbox-1.0.0.aar/41fcf3592e910f3b7adcbe080cede63c/AndroidManifest.xml:23:5-25:41
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/42bf12d56957dc3170747e8ed482425b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/42bf12d56957dc3170747e8ed482425b/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/c67e598c997c3c68862e2b77ba1cce14/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/c67e598c997c3c68862e2b77ba1cce14/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/alexxxmf/Projects/ff-advocate/android/app/src/debug/AndroidManifest.xml:5:22-75
+receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
+ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-19:20
+	android:enabled
+		ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-35
+	android:exported
+		ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-36
+	android:name
+		ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-70
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-79
+	android:name
+		ADDED from [:react-native-device-info] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-76
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+	android:resource
+		ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+	android:name
+		ADDED from [:react-native-webview] /Users/alexxxmf/Projects/ff-advocate/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+service#io.intercom.android.sdk.fcm.IntercomFcmMessengerService
+ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:11:9-16:19
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:11:18-88
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT+action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:12:13-15:29
+	android:priority
+		ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:12:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:13:17-78
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:13:25-75
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:14:17-80
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-fcm:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-fcm-5.4.0.aar/f5efeaedc29277688a7ff7e4eaa76940/AndroidManifest.xml:14:25-77
+activity#io.intercom.android.sdk.activities.IntercomMessengerActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:13:9-19:73
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:17:13-43
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:19:13-70
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:16:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:15:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:18:13-55
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:14:13-88
+activity#io.intercom.android.sdk.lightbox.LightBoxActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:20:9-25:73
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:25:13-70
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:23:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:22:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:24:13-58
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:21:13-77
+activity#io.intercom.android.sdk.activities.IntercomArticleActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:26:9-31:57
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:29:13-43
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:31:13-54
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:28:13-37
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:30:13-63
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:27:13-86
+activity#io.intercom.android.sdk.activities.IntercomHelpCenterActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:32:9-38:57
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:36:13-43
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:38:13-54
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:35:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:34:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:37:13-63
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:33:13-89
+activity#io.intercom.android.sdk.activities.IntercomPostActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:39:9-45:57
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:43:13-44
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:45:13-54
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:42:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:41:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:44:13-54
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:40:13-83
+activity#io.intercom.android.sdk.activities.IntercomNoteActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:46:9-52:73
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:50:13-44
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:52:13-70
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:49:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:48:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:51:13-54
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:47:13-83
+activity#io.intercom.android.sdk.activities.IntercomSheetActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:53:9-59:57
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:57:13-43
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:59:13-54
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:56:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:55:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:58:13-63
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:54:13-84
+activity#io.intercom.android.sdk.activities.IntercomVideoActivity
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:60:9-66:57
+	android:launchMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:64:13-43
+	android:windowSoftInputMode
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:66:13-54
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:63:13-37
+	android:configChanges
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:62:13-59
+	android:theme
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:65:13-55
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:61:13-84
+intent-filter#action:name:io.intercom.android.sdk.INTERCOM_PUSH_OPENED
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:71:13-73:29
+action#io.intercom.android.sdk.INTERCOM_PUSH_OPENED
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:72:17-87
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:72:25-84
+intent-filter#action:name:io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:74:13-76:29
+action#io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:75:25-87
+provider#io.intercom.android.sdk.IntercomInitializeContentProvider
+ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:79:9-82:40
+	android:authorities
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:81:13-85
+	android:exported
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:82:13-37
+	android:name
+		ADDED from [io.intercom.android:intercom-sdk-base:5.4.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/AndroidManifest.xml:80:13-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:29:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:31:13-33:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:17.6.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.6.0.aar/d2674820eef2ee4a5bf0dca6aba542fc/AndroidManifest.xml:31:28-51
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.1.aar/d40f77fffc08be57921e5849e10a7a86/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.1.aar/98c26e531ab6112dffbe139caa08c523/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:35:13-100
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.3.aar/322803843ca53d9116ddfeb386b2dcbc/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/0a3b9a9af8870c53030ea516c131e302/AndroidManifest.xml:23:5-82
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/49d84d3ed319650cc6ef280f104bda32/AndroidManifest.xml:23:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:38:13-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.1.2.aar/4e0ac690f74b600f1b8d608052758808/AndroidManifest.xml:53:28-51
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/510b7fb17fba82d3bf922f6579395054/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/firebase-common-16.1.0.aar/00eed7fb96c25913376545938ef092ac/AndroidManifest.xml:13:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2ced800ce16f125d359c82261adce26b/AndroidManifest.xml:24:13-58
+activity#com.intercom.input.gallery.GalleryInputFullScreenActivity
+ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:10:9-12:74
+	android:theme
+		ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:12:13-71
+	android:name
+		ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:11:13-85
+activity#com.intercom.input.gallery.GalleryLightBoxActivity
+ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:13:9-16:74
+	android:configChanges
+		ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:15:13-80
+	android:theme
+		ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:16:13-71
+	android:name
+		ADDED from [com.intercom:android-composer-gallery:2.0.2] /Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/android-composer-gallery-2.0.2.aar/2a8ea3718378b6d0048aba73522b4151/AndroidManifest.xml:14:13-78

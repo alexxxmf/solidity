@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/alexxxmf/Projects/ff-advocate/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/intercom-sdk-base-5.4.0.aar/354498d6364d49968f6be0df86cf203f/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,132,206,265",
+                        "endColumns": "76,73,58,59",
+                        "endOffsets": "127,201,260,320"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "264,341,415,474",
+                        "endColumns": "76,73,58,59",
+                        "endOffsets": "336,410,469,529"
+                    }
+                },
+                {
+                    "source": "/Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/949b20b894a289a1af22d84673814c48/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "534",
+                        "endLines": "12",
+                        "endColumns": "10",
+                        "endOffsets": "701"
+                    }
+                },
+                {
+                    "source": "/Users/alexxxmf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ee91335a897d8cc8bacbbe3288c26519/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}

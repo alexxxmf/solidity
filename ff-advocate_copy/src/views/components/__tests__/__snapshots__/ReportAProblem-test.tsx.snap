@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReportAProblem: After asking help 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../src/images/icons/Problem.png",
+      }
+    }
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "borderRadius": 8,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="askHelp"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#111111",
+            "borderRadius": 8,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "padding": 8,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#111111",
+              "fontFamily": "Raleway",
+              "fontSize": 16,
+              "fontWeight": "bold",
+              "paddingBottom": 1,
+              "paddingTop": 2,
+              "textAlign": "center",
+            }
+          }
+        >
+          Report a problem
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ReportAProblem: Register intercom user 1`] = `
+Array [
+  Array [
+    Object {
+      "userId": "1234",
+    },
+  ],
+]
+`;
+
+exports[`ReportAProblem: Render default 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../src/images/icons/Problem.png",
+      }
+    }
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "borderRadius": 8,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="askHelp"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#111111",
+            "borderRadius": 8,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "padding": 8,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#111111",
+              "fontFamily": "Raleway",
+              "fontSize": 16,
+              "fontWeight": "bold",
+              "paddingBottom": 1,
+              "paddingTop": 2,
+              "textAlign": "center",
+            }
+          }
+        >
+          Report a problem
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ReportAProblem: Update intercom user 1`] = `
+Array [
+  Array [
+    Object {
+      "custom_attributes": Object {
+        "digitalmentor": "true",
+      },
+      "email": "harry@hogwarts.com",
+      "name": "Harry Potter",
+    },
+  ],
+]
+`;

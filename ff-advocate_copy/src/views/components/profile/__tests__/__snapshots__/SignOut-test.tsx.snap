@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly: Render 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    Object {
+      "color": "#E12D39",
+      "fontFamily": "Raleway",
+      "fontSize": 16,
+      "marginTop": 5,
+      "padding": 5,
+    }
+  }
+>
+  Sign out
+</Text>
+`;
+
+exports[`renders correctly: branch logout calls 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`renders correctly: intercom logout calls 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`renders correctly: navigate calls 1`] = `
+Array [
+  Array [
+    "OnboardingSignInScreen",
+  ],
+]
+`;
+
+exports[`renders correctly: onActivity calls 1`] = `
+Array [
+  Array [
+    Object {
+      "activity": Object {
+        "activityKey": "app",
+        "activityType": "start sign out",
+        "data": Object {
+          "signOutDate": 2019-05-30T17:52:26.862Z,
+        },
+      },
+      "device": Object {
+        "appBuildNumber": "100",
+        "appFirstInstallTime": "01/01/2019",
+        "appReadableVersion": "version 100",
+        "appState": "active",
+        "deviceBrand": "apple",
+        "deviceDataLoaded": true,
+        "deviceModel": "iphone 2000",
+        "deviceName": "iphone",
+        "deviceOS": "iphone os os 1000",
+        "deviceTypeId": "device ID",
+        "deviceUniqueId": "unique ID",
+        "osName": "iphone os",
+      },
+      "user": Object {
+        "brandingTitle": "testing",
+        "userEmail": "harry@hogwarts.com",
+        "userId": "1234",
+        "userName": "Harry Potter",
+      },
+    },
+  ],
+]
+`;

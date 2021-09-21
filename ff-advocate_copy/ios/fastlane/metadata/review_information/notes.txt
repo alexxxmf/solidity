@@ -1,1 +1,0 @@
-Our sign-in flow is passwordless. That means we send a magic link to our users for the on boarding.

@@ -1,9 +1,0 @@
-Django
-graphene
-graphene-django
-werkzeug
-django-configurations
-python-dotenv
-dj_database_url
-django-cors-headers
-rollbar

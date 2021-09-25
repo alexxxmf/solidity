@@ -9,7 +9,6 @@ import pytest
 
 
 def test_get_entrance_fee(check_local_blockchain_envs, lottery_contract):
-  lottery_contract = deploy_lottery()
   entrance_fee = lottery_contract.getEntranceFee()
   # INITIAL_VALUE sets eth price in usd to 2000 usd
   # ENTRANCE_FEE is 50 so 50/2000 is 0.025
@@ -19,7 +18,7 @@ def test_get_entrance_fee(check_local_blockchain_envs, lottery_contract):
   assert entrance_fee == expected_entrance_fee
 
 def test_cant_enter_unless_started(check_local_blockchain_envs, lottery_contract):
-  # we need to make sure this one fails > pytest.raises(exceptions.VirtualMachineError)
-  lottery_contract.enter(
-    {"from": get_account(), "value": lottery_contract.getEntranceFee()}
-  )
+  with pytest.raises(exceptions.VirtualMachineError):
+    lottery_contract.enter(
+      {"from": get_account(), "value": lottery_contract.getEntranceFee()}
+    )

@@ -20,6 +20,7 @@ contract Lottery {
   constructor(address _priceFeedAddress, uint256 _usdEntryFee) public{
     ethUsdPriceFeed = AggregatorV3Interface(_priceFeedAddress);
     usdEntryFee = _usdEntryFee * (10 ** 18); // we pass it in usd then we convert to 18 decimals
+    lottery_state = LOTTERY_STATE.CLOSED;
   }
 
   function enter() public payable {

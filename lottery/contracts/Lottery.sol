@@ -24,6 +24,8 @@ contract Lottery {
 
   function enter() public payable {
     require(lottery_state == LOTTERY_STATE.OPEN);
+    require(msg.value >= getEntranceFee(), "Not enough ETH!");
+    players.push(msg.sender);
   }
 
   function getEntranceFee() public view returns(uint256){

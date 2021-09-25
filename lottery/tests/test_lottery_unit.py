@@ -2,13 +2,13 @@ from scripts.helpers import (
     get_account,
     get_contract
 )
-from scripts.deploy import deploy_lottery, ENTRANCE_FEE
+from scripts.deploy_lottery import deploy_lottery
 from brownie import exceptions, network
 from web3 import Web3
 import pytest
 
 
-def test_get_entrance_fee():
+def test_get_entrance_fee(check_local_blockchain_envs, lottery_contract):
   lottery_contract = deploy_lottery()
   entrance_fee = lottery_contract.getEntranceFee()
   # INITIAL_VALUE sets eth price in usd to 2000 usd
@@ -18,3 +18,5 @@ def test_get_entrance_fee():
 
   assert entrance_fee == expected_entrance_fee
 
+def test_cant_enter_unless_started(check_local_blockchain_envs, lottery_contract):
+  pass

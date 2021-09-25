@@ -1,12 +1,15 @@
 from brownie import accounts, network, Lottery, config
 
-from scripts.helpers import get_account
+from scripts.helpers import get_account, get_contract
 
 
-def deploy_lottery():
+ENTRANCE_FEE = 50
+
+def deploy_lottery(entrance_fee=ENTRANCE_FEE):
   account = get_account()
-  priceFeedAddress = config["networks"][network.show_active()]["eth_usd_price_feed"]
-  lottery_contract = Lottery.deploy(priceFeedAddress, 50, {"from": account});
+  priceFeedAddress = get_contract("eth_usd_price_feed").address
+
+  lottery_contract = Lottery.deploy(priceFeedAddress, entrance_fee, {"from": account});
 
   return lottery_contract
 

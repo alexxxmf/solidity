@@ -26,7 +26,7 @@ contract Lottery {
     require(lottery_state == LOTTERY_STATE.OPEN);
   }
 
-  function getEntranceFee() public {
+  function getEntranceFee() public view returns(uint256){
     (
       /*uint80 roundID*/,
       int price,
@@ -37,7 +37,9 @@ contract Lottery {
 
     // 18 decimals, price comes with 8 decimals according to chainlink docs
     uint256 adjustedPrice = uint256(price) * 10**10;
-    uint256 costToEnter = usdEntryFee/adjustedPrice;
+    uint256 costToEnter = (usdEntryFee * 10**18) / adjustedPrice;
+
+    return costToEnter;
   }
 
   function startLottery() public {

@@ -2,9 +2,10 @@
 pragma solidity ^0.6.6;
 
 import "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 
-contract Lottery {
+contract Lottery is Ownable {
   address payable[] public players;
   address payable public recentWinner;
   uint256 public randomness;
@@ -51,6 +52,10 @@ contract Lottery {
       "Can't start a new lottery yet!"
     );
     lottery_state = LOTTERY_STATE.OPEN;
+  }
+
+  function endLottery() public onlyOwner {
+
   }
 
 }

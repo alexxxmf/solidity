@@ -18,7 +18,19 @@ def test_get_entrance_fee(check_local_blockchain_envs, lottery_contract):
   assert entrance_fee == expected_entrance_fee
 
 def test_cant_enter_unless_started(check_local_blockchain_envs, lottery_contract):
+  account = get_account()
   with pytest.raises(exceptions.VirtualMachineError):
     lottery_contract.enter(
-      {"from": get_account(), "value": lottery_contract.getEntranceFee()}
+      {"from": account, "value": lottery_contract.getEntranceFee()}
     )
+
+def test_can_start_and_enter(check_local_blockchain_envs, lottery_contract):
+  account = get_account()
+  lottery_contract.startLottery({"from": account})
+
+  lottery_contract.enter(
+    {"from": account, "value": lottery_contract.getEntranceFee()}
+  )
+
+  assert lottery_contract.players(0) == account
+

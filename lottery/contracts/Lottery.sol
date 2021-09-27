@@ -69,7 +69,30 @@ contract Lottery is Ownable, VRFConsumerBase {
 
   function endLottery() public onlyOwner {
     lottery_state = LOTTERY_STATE.CALCULATING_WINNER;
+    bytes32 requestId = requestRandomness(keyhash, fee);
+    emit RequestedRandomness(requestId);
+  }
 
+  function fulfillRandomness(bytes32 _requestId, uint256 _randomness)
+    internal
+    override 
+  {
+    require(
+      lottery_state == LOTTERY_STATE.CALCULATING_WINNER,
+      "Not the right time for this!"
+    );
+    require(_randomness > 0, "random-not-found");
+    // using modula will always provide results within the range [0, length -1]
+    // so it's fair to say is a nice way to get a random index given max index will be also length -1
+    uint256 indexOfWinner = _randomness % players.length;
+    recentWinner = players[indexOfWinner];
+    recentWinner.transfer(address(this).balance);
+    // IMPORTANT: Dynamic memory arrays are created using new keyword.
+    // https://www.tutorialspoint.com/solidity/solidity_arrays.htm
+    // https://cryptomarketpool.com/how-to-create-an-array-in-a-solidity-smart-contract/
+    players = new address payable[](0);
+    lottery_state = LOTTERY_STATE.CLOSED;
+    randomness = _randomness;
   }
 
 }

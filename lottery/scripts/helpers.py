@@ -3,8 +3,11 @@ from brownie import (
     network,
     config,
     MockV3Aggregator,
+    MockVRFCoordinator,
+    LinkToken,
     Contract
 )
+
 
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local"]
@@ -13,6 +16,8 @@ INITIAL_VALUE = 200000000000
 
 contract_to_mock_map = {
     "eth_usd_price_feed": MockV3Aggregator,
+    "vrf_coordinator": MockVRFCoordinator,
+    "link_token": LinkToken,
 }
 
 def get_account(index=None, id=None):
@@ -66,4 +71,13 @@ def get_contract(contract_name):
 
     return contract
 
-            
+def fund_with_link(
+    contract_address, account=None, link_token=None, amount=100000000000000000 # 0.1 LINK
+):
+    account = account if account else get_account()
+    link_token = link_token if link_token else get_contract("link_token")
+    tx = link_token.transfer(contract_address, amount, {"from": account})
+    tx.wait(1)
+
+    print("Fund contract!")
+    return tx

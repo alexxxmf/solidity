@@ -1,6 +1,6 @@
-from brownie import accounts, network, Lottery, config
-
 from scripts.helpers import get_account, get_contract
+from brownie import  network, Lottery, config
+import time
 
 
 ENTRANCE_FEE = 50

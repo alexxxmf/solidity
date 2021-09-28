@@ -35,11 +35,6 @@ def get_account(index=None, id=None):
         return accounts[0]
     return accounts.add(config["wallets"]["from_key"])
 
-def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
-    account = get_account()
-    MockV3Aggregator.deploy(decimals, initial_value, {"from": account})
-    print("Mock contracts were succesfully deployed!")
-
 def get_contract(contract_name):
     """
     This function will grab the contract addresses from the brownie config
@@ -81,3 +76,15 @@ def fund_with_link(
 
     print("Fund contract!")
     return tx
+
+DECIMALS = 8
+INITIAL_VALUE = 200000000000
+
+def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
+  account = get_account()
+
+  MockV3Aggregator.deploy(decimals, initial_value, {"from": account})
+  link_token = LinkToken.deploy({"from": account})
+  VRFCoordinatorMock.deploy(link_token.address, {"from": account})
+
+  print("Mocks for price feed, link token and VRF Coordinator have been successfully deployed")

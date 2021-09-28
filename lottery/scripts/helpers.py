@@ -3,7 +3,7 @@ from brownie import (
     network,
     config,
     MockV3Aggregator,
-    MockVRFCoordinator,
+    VRFCoordinatorMock,
     LinkToken,
     Contract
 )
@@ -16,7 +16,7 @@ INITIAL_VALUE = 200000000000
 
 contract_to_mock_map = {
     "eth_usd_price_feed": MockV3Aggregator,
-    "vrf_coordinator": MockVRFCoordinator,
+    "vrf_coordinator": VRFCoordinatorMock,
     "link_token": LinkToken,
 }
 

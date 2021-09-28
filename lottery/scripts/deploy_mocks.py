@@ -1,4 +1,4 @@
-from brownie import LinkToken, MockV3Aggregator, MockVRFCoordinator
+from brownie import LinkToken, MockV3Aggregator, VRFCoordinatorMock
 
 from scripts.helpers import get_account
 
@@ -11,7 +11,7 @@ def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
 
   MockV3Aggregator.deploy(decimals, initial_value, {"from": account})
   link_token = LinkToken.deploy({"from": account})
-  MockVRFCoordinator.deploy(link_token.address, {"from": account})
+  VRFCoordinatorMock.deploy(link_token.address, {"from": account})
 
   print("Mocks for price feed, link token and VRF Coordinator have been successfully deployed")
 

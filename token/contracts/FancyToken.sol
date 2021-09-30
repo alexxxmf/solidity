@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
 contract FancyToken is ERC20{
-  constructor(uint256 initialSupply) ERC20("FancyToken", "FNZ") {
+  constructor(uint256 initialSupply) ERC20("TrannieToken", "TT") {
     _mint(msg.sender, initialSupply);
   }
 }

@@ -72,14 +72,31 @@ def repay_all(amount, lending_pool, account):
   tx.wait(1)
   print("Repaid!")
 
+def borrow_erc20(lending_pool, amount, account, erc20_address=None):
+  erc20_address = (
+      erc20_address
+      if erc20_address
+      else config["networks"][network.show_active()]["aave_dai_token"]
+  )
+  # 1 is stable interest rate
+  # 0 is the referral code
+  transaction = lending_pool.borrow(
+      erc20_address,
+      Web3.toWei(amount, "ether"),
+      1,
+      0,
+      account.address,
+      {"from": account},
+  )
+  transaction.wait(1)
+  print(f"Congratulations! We have just borrowed {amount}")
+
 def main():
   account = get_account()
   erc20_address = config["networks"][network.show_active()]["weth_token"]
 
   if network.show_active() in ["mainnet-fork", "mainnet-fork-dev"]:
     get_weth(account=account)
-
-  erc20 = interface.ERC20(config["networks"][network.show_active()]["weth_token"])
 
   lending_pool = get_lending_pool()
   approve_erc20(amount, lending_pool.address, erc20_address, account)
@@ -90,7 +107,12 @@ def main():
 
   erc20_eth_price = get_asset_price()
   amount_erc20_to_borrow = (1 / erc20_eth_price) * (borrowable_eth * 0.95)
-  # amount_erc20_to_repay = (1 / erc20_eth_price) * (total_debt_eth * 0.95)
+  
+  print(f"We are going to borrow {amount_erc20_to_borrow} DAI")
+  borrow_erc20(lending_pool, amount_erc20_to_borrow, account)
+
+  borrowable_eth, total_debt_eth = get_borrowable_data(lending_pool, account)
+
   repay_all(amount_erc20_to_borrow, lending_pool, account)
 
   get_borrowable_data(lending_pool, account)

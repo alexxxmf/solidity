@@ -62,6 +62,15 @@ def repay_all(amount, lending_pool, account):
     config["networks"][network.show_active()]["aave_dai_token"],
     account,
   )
+  tx = lending_pool.repay(
+    config["networks"][network.show_active()]["aave_dai_token"],
+    Web3.toWei(amount, "ether"),
+    1,
+    account.address,
+    {"from": account},
+  )
+  tx.wait(1)
+  print("Repaid!")
 
 def main():
   account = get_account()
@@ -78,3 +87,10 @@ def main():
   lending_pool.deposit(erc20_address, amount, account.address, 0, {"from": account})
   print("Deposited!")
   borrowable_eth, total_debt_eth = get_borrowable_data(lending_pool, account)
+
+  erc20_eth_price = get_asset_price()
+  amount_erc20_to_borrow = (1 / erc20_eth_price) * (borrowable_eth * 0.95)
+  # amount_erc20_to_repay = (1 / erc20_eth_price) * (total_debt_eth * 0.95)
+  repay_all(amount_erc20_to_borrow, lending_pool, account)
+
+  get_borrowable_data(lending_pool, account)

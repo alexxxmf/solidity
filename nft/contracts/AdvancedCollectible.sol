@@ -14,9 +14,12 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
   bytes32 keyhash;
   uint256 fee;
   mapping(uint256 => Breed) public tokenIdToBreed;
-  mapping(bytes32 => address) public equestIdToMinter;
+  mapping(bytes32 => address) public requestIdToSender;
 
-  event RequestedCollectible(bytes32 indexed requestId, address requester);
+  event RequestedCollectible(bytes32 indexed _requestId, address _requester);
+  event BreedAssigned(uint256 indexed tokenId, Breed breed);
+  // What does the indexed keyword do?
+  // https://ethereum.stackexchange.com/questions/8658/what-does-the-indexed-keyword-do
 
   constructor(
     string memory _name,
@@ -35,11 +38,8 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
   }
 
   function createCollectible() public{
-    // uint256 newTokenId = tokenCounter;
-    // _safeMint(msg.sender, newTokenId);
-    // _setTokenURI(newTokenId, _tokenUri);
-    // tokenCounter += 1;
     bytes32 requestId = requestRandomness(keyhash, fee);
+    requestIdToSender[requestId] = msg.sender;
     emit RequestedCollectible(requestId);
   }
 
@@ -47,6 +47,17 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     internal
     override 
   {
+    uint256 newTokenId = tokenCounter;
     Breed breed = Breed[randomness % 3];
+    tokenIdToBreed[newTokenId] = breed;
+    emit BreedAssigned(newTokenId, breed);
+    address owner = requestIdToSender[_requestId];
+    _safeMint(owner, newTokenId);
+    tokenCounter = tokenCounter + 1;
+  }
+
+  function setTokenURI(uint256 tokenId, string memory _tokenURI) public {
+    require(_isApprovedOrOwner(_msgSender(), tokenId), "ERC721: caller is not owner or not approved");
+    _setTokenURI(tokenId, _tokenURI);
   }
 }

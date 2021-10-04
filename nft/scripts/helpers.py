@@ -8,10 +8,13 @@ from brownie import (
 )
 from web3 import Web3
 
-from scripts.deploy_mocks import deploy_mocks
 
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["development", "ganache-local"]
+POKEMON_TYPE_MAPPING = {0: "", 1: "", 2: ""}
+
+def get_pokemon_type(type_number):
+  return POKEMON_TYPE_MAPPING[type_number]
 
 def get_account(index=None, id=None):
     # accounts[0]
@@ -33,11 +36,19 @@ contract_to_mock = {
   "vrf_coordinator": VRFCoordinatorMock
 }
 
+def deploy_mocks():
+  print("Deploying mocks...")
+  account = get_account()
+  link_token = LinkToken.deploy({"from": account})
+  print(f'Link token mock deployed at {link_token.address}')
+  vrf_coordinator = VRFCoordinatorMock.deploy(link_token.address, {"from": account})
+  print(f'VRF coordinator mock deployed at {vrf_coordinator.address}')
+
 def get_contract(contract_name):
   contract_type = contract_to_mock[contract_name]
 
   if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
-    if len[contract_type] <= 0:
+    if len(contract_type) <= 0:
       deploy_mocks()
     
     contract = contract_type[-1]
